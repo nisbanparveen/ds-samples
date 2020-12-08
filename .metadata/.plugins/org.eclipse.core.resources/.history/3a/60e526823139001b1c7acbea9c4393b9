@@ -1,0 +1,121 @@
+package LinkedList;
+
+/**
+ * 
+ * @author Laptop
+ *
+ */
+public class LinkedList {
+	Node head;
+
+	/**
+	 * 
+	 * 
+	 * Linked List is used for storing collection of Data. 
+	 * Elements are connected by pointer.
+	 * Every Node will have a data of the particular node and a
+	 * pointer/reference to next node
+	 *
+	 *
+	 */
+	static class Node {
+		int data;
+		Node next;
+
+		Node(int data) {
+			this.data = data;
+			next = null;
+		}
+
+	}
+
+	/**
+	 * 
+	 * Insertion at the Ending of the list
+	 * 
+	 * 1. Create New Node and point the next pointer to NULL 2. Point the last Nodes
+	 * next pointer point to new node
+	 * 
+	 * @param list
+	 * @param data
+	 * @return list
+	 */
+	public static LinkedList insert(LinkedList list, int data) {
+		Node new_node = new Node(data);
+		new_node.next = null;
+
+		if (list.head == null) {
+			list.head = new_node;
+		} else {
+			Node last_node = list.head;
+
+			while (last_node.next != null) {
+				last_node = last_node.next;
+			}
+
+			last_node.next = new_node;
+		}
+
+		return list;
+
+	}
+
+	/**
+	 * Insert Item at the beginning of the LinkedList
+	 * 
+	 * 1. Create New node and point the next pointer point to current Head 2. Update
+	 * the Head pointer point to new node
+	 * 
+	 * @param list
+	 * @param data
+	 * @return
+	 */
+	public static LinkedList insertAtBeginning(LinkedList list, int data) {
+		Node new_node = new Node(data);
+		new_node.next = list.head;
+
+		if (list.head == null) {
+			list.head = new_node;
+		} else {
+			list.head = new_node;
+		}
+
+		return list;
+
+	}
+
+	/**
+	 * Printing the LinkedList elements Traverse through the node until the Node
+	 * points to null
+	 * 
+	 * @param list
+	 */
+	public static void printList(LinkedList list) {
+		Node currentNode = list.head;
+
+		System.out.print("LinkedList : ");
+		while (currentNode != null) {
+			System.out.print(currentNode.data + " ");
+			currentNode = currentNode.next;
+		}
+		System.out.println("");
+	}
+
+	/**
+	 * Traverse through the node list and return the node count
+	 * 
+	 * @param list
+	 * @return int
+	 */
+	public static int count(LinkedList list) {
+		int length = 0;
+		Node currentNode = list.head;
+
+		while (currentNode != null) {
+			length++;
+			currentNode = currentNode.next;
+		}
+		return length;
+	}
+
+}
