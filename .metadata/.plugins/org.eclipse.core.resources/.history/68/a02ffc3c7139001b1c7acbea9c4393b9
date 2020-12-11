@@ -1,0 +1,48 @@
+import LinkedList.FindIntersectingNode;
+import LinkedList.LinkedListCopy;
+import LinkedList.LinkedListCopy.Node;
+import LinkedList.LinkedList;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		LinkedList list1 = new LinkedList();
+
+		list1.insert(list1, 'a');
+		list1.insert(list1, 'b');
+		list1.insert(list1, 'c');
+		list1.insert(list1, 'd');
+		list1.insert(list1, 'e');
+		list1.insert(list1, 'f');
+		
+		LinkedList list2 = new LinkedList();
+		list2.insert(list2, 'x');
+		list2.insert(list2, 'y');
+		list2.insert(list2, 'c');
+		list2.insert(list2, 'd');
+		list2.insert(list2, 'e');
+		list2.insert(list2, 'f');
+
+
+		System.out.println("Insertion: " + FindIntersectingNode.FindNode(list1, list2));
+
+		
+		LinkedList list3 = new LinkedList();
+
+		list3.insert(list3, 1);
+		list3.insert(list3, 2);
+		list3.insert(list3, 3);
+		list3.insert(list3, 4);
+		list3.insert(list3, 5);
+		
+
+		LinkedList list4 = new LinkedList();
+		list4.insert(list4, 7);
+		list4.insert(list4, 4);
+		list4.insert(list4, 5);
+		System.out.println("Insertion: " + FindIntersectingNode.FindNode(list3, list4));
+
+	}
+
+}

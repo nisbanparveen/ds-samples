@@ -20,28 +20,42 @@ public class LinkedList {
 	 *
 	 */
 	public static class Node {
-		int data;
+		Object data;
 		Node next;
 
-		public Node(int data) {
+		public Node(Object data) {
 			this.data = data;
 			next = null;
 		}
 
 	}
 
-	public static LinkedList insert(LinkedList list, int data) {
+	public  LinkedList insert(LinkedList list, Object data) {
 		return Insert.insert(list, data);
 	}
 
-	public static LinkedList insert(LinkedList list, int insertAtposition, int position) {
+	public  LinkedList insert(LinkedList list, Object insertAtposition, int position) {
 		return Insert.insert(list, insertAtposition, position);
 	}
 
-	public static LinkedList insertAtBeginning(LinkedList list, int data) {
+	public  LinkedList insertAtBeginning(LinkedList list, Object data) {
 		return Insert.insertAtBeginning(list, data);
 	}
-
+	public LinkedList deleteFirstNode(LinkedList list) {
+		return Deletion.deleteFirstNode(list);
+	}
+	
+	public LinkedList deleteLastNode(LinkedList list) {
+		return Deletion.deleteLastNode(list);
+	}
+	
+	
+	public LinkedList deleteWithIndex(LinkedList list,int position) {
+		return Deletion.deleteWithIndex(list, position);
+	}
+	
+	
+	
 	/**
 	 * Printing the LinkedList elements Traverse through the node until the Node
 	 * points to null

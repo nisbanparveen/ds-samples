@@ -1,0 +1,19 @@
+import LinkedList.LinkedList;
+import Problems.FindIntersectingNode;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		LinkedList list3 = new LinkedList();
+		list3.insert(list3, 'a');
+		list3.insert(list3, 'b');
+		list3.insert(list3, 'c');
+		list3.insert(list3, 'd');
+		list3.insert(list3, 'e');
+		
+		list3.deleteNodeWithKey(list3,'e');
+		list3.printList(list3);
+	}
+
+}

@@ -1,0 +1,72 @@
+package LinkedList;
+
+import LinkedList.LinkedList.Node;
+
+public class LinkedListNode {
+
+	Node head;
+
+	/**
+	 * 
+	 * 
+	 * Linked List is used for storing collection of Data. Elements are connected by
+	 * pointer. Every Node will have a data of the particular node and a
+	 * pointer/reference to next node
+	 *
+	 *
+	 */
+	public static class Node {
+		int intdata;
+		char charData;
+		Node next;
+
+		public Node(int data) {
+			this.intdata = data;
+			next = null;
+		}
+		public Node(char data) {
+			this.charData = data;
+			next = null;
+		}
+
+	}
+
+	public static LinkedListNode insert(LinkedListNode list, int data) {
+		Node new_node = new Node(data);
+		new_node.next = null;
+
+		if (list.head == null) {
+			list.head = new_node;
+		} else {
+			Node last_node = list.head;
+
+			while (last_node.next != null) {
+				last_node = last_node.next;
+			}
+
+			last_node.next = new_node;
+		}
+
+		return list;
+	}
+	public static LinkedListNode insert(LinkedListNode list, char data) {
+		Node new_node = new Node(data);
+		new_node.next = null;
+
+		if (list.head == null) {
+			list.head = new_node;
+		} else {
+			Node last_node = list.head;
+
+			while (last_node.next != null) {
+				last_node = last_node.next;
+			}
+
+			last_node.next = new_node;
+		}
+
+		return list;
+
+	}
+
+}

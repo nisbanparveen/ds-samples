@@ -1,0 +1,15 @@
+package LinkedList;
+
+import LinkedList.LinkedListCopy.Node;
+
+public class Deletion {
+	
+	public LinkedList deleteFirst(LinkedListCopy list) {
+		Node tempNode= list.head;
+		
+		while(tempNode != null) {
+			list.head= tempNode.next;
+		}
+	}
+
+}

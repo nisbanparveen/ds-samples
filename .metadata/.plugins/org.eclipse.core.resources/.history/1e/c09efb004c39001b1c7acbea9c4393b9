@@ -1,0 +1,36 @@
+package LinkedList;
+
+import LinkedList.LinkedList.Node;
+
+public class FindIntersectingNode {
+	
+	public static void FindNode(LinkedList list1, LinkedList list2) {
+		int l1=0,l2=0,diff=0;
+		Node listNode1= list1.head;
+		Node listNode2= list2.head;
+		
+		while(listNode1 !=null) {
+			l1++;
+			listNode1= listNode1.next;
+			
+		}
+		while(listNode2 !=null) {
+			l2++;
+			listNode2= listNode2.next;
+			
+		}
+		diff=l1-l2;
+		if(l1<l2) {
+			listNode1= list2.head;
+			listNode2=list1.head;
+			diff=l2-l1;
+		}
+		
+		for(int i=0;i<diff;i++) {
+			listNode1= listNode1.next;
+			while(listNode1!=null && listNode2 != null)
+		}
+		
+	}
+
+}

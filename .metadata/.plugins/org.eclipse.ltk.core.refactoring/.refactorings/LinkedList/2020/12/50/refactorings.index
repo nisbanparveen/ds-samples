@@ -1,1 +1,14 @@
 1607413927445	Move compilation unit
+1607444030581	Rename field 'intdata'
+1607444056586	Rename type 'LinkedList'
+1607444069720	Rename type 'LinkedListNode'
+1607444819562	Delete elements
+1607493778058	Delete element
+1607493811432	Delete element
+1607493825583	Delete element
+1607502500176	Delete elements
+1607502513519	Move compilation units
+1607502534028	Rename type 'LinkedList'
+1607502541622	Rename type 'LinkedListCopy'
+1607504897104	Rename method 'deleteWithPosition'
+1607698877428	Delete element
