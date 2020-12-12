@@ -1,0 +1,34 @@
+package problems;
+
+import java.util.Stack;
+
+import com.sun.org.apache.bcel.internal.generic.StackConsumer;
+
+/**
+ * 
+ * @author Nisban Parveen
+ *
+ */
+public class GetMinimum{
+	private Stack<Integer> mainStack;
+	private Stack<Integer> minStack;
+
+	public GetMinimum() {
+		mainStack = new Stack<>();
+		minStack = new Stack<>();
+	}
+	
+	public void push(int data) {
+		mainStack.push(data);
+		if(minStack.isEmpty() || ((Integer) minStack.peek()>=(Integer)data)){
+			minStack.push(data);
+		}
+	}
+	
+	public int  pop() {
+		if(mainStack.isEmpty())return (Integer) null;
+		Integer mainStakTop= mainStack.peek();
+		Integer minStackTop= minStack.peek();
+	}
+	
+}

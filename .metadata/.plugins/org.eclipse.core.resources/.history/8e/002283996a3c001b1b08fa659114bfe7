@@ -1,0 +1,19 @@
+package problems;
+
+import java.util.Stack;
+
+/**
+ * 
+ * @author Nisban Parveen
+ *
+ */
+public class GetMinimum {
+	private Stack mainStack;
+	private Stack minStack;
+	
+	public GetMinimum() {
+
+		mainStack= new Stack<>();
+		minStack= new Stack<>();
+	}
+}

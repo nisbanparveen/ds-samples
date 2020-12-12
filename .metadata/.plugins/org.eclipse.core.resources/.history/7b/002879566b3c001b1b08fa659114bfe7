@@ -1,0 +1,25 @@
+package problems;
+
+import java.util.Stack;
+
+/**
+ * 
+ * @author Nisban Parveen
+ *
+ */
+public class GetMinimum {
+	private Stack<Integer> mainStack;
+	private Stack<Integer> minStack;
+
+	public GetMinimum() {
+		mainStack = new Stack<>();
+		minStack = new Stack<>();
+	}
+	
+	public void push(int data) {
+		mainStack.push(data);
+		if(minStack.isEmpty() || ((Integer) minStack.peek()>=(Integer)data)){
+			minStack.push(data);
+		}else minStack.push(minStack.peek());
+	}
+}

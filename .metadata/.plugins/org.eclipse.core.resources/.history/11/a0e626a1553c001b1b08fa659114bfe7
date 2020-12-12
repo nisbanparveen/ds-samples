@@ -1,0 +1,29 @@
+package problems;
+
+/**
+ * This solution is for a classic direct stack implementation problem, the
+ * balancing of symbols.
+ * 
+ * We use stacks to check if the given expression has balanced symbols or not.
+ * 
+ * Algorithm Steps:
+ * 
+ * 1. Create a Stack 
+ * 2. while(end of input is not reached) 
+ * 	a. If the character
+ * read is not symbol to be balanced, ignore it. 
+ * 	b. If the character is opening
+ * symbol like (,[,{ then push it onto stack. 
+ * 	c. If it is closing symbol like
+ * ),],}, if the stack is empty report and error, else pop the stack
+ * 	d. If the symbol popped is not the corresponding opening symbol, report error
+ * 
+ * @author Nisban Parveen
+ *
+ */
+public class SymbolBalancing {
+	public SymbolBalancing() {
+		
+	}
+
+}

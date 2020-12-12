@@ -1,0 +1,10 @@
+package problems;
+/**
+ * This solution is for a classic direct stack implementation problem, the balancing of symbols
+ * 
+ * @author Nisban Parveen
+ *
+ */
+public class SymbolBalancing {
+
+}

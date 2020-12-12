@@ -1049,3 +1049,18 @@ java.lang.Exception: A resource exists with a different case: '/Stacks/bin/src/I
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:244)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-12-12 14:23:54.594
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-12-12 14:25:06.755
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-12-12 14:27:45.531
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-12-12 14:28:59.488
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2020-12-12 14:36:08.833
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
