@@ -1,0 +1,21 @@
+import 
+import LinkedList.LinkedList;
+import LinkedList.LinkedList.Node;
+
+public class LinkedListStack {
+
+	private LinkedList list;
+	
+	public LinkedListStack() {
+		this.list= new LinkedList();
+		Node headNode= list.head;
+	}
+	
+	public void push(int data) {
+		if(list.head==null) {
+			list.head= new Node(data);
+		}else if(list.head.data==null) {
+			
+		}
+	}
+}

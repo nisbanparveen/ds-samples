@@ -1,0 +1,49 @@
+
+public class DynamicArrayStack {
+	private int top;
+	private int capacity;
+	private int[] array;
+
+	
+	public DynamicArrayStack() {
+		top = -1;
+		capacity =2;
+		array = new int[capacity];
+	}
+	public boolean isEmpty() {
+		return (top == -1);
+	}
+
+	public boolean isStackFull() {
+		return (top == capacity - 1);
+	}
+
+	public void push(int data) {
+		if (isStackFull())
+			doubleStak();
+		array[++top] = data;
+		System.out.println(data+" Pushed into the stack");
+	}
+
+	private void doubleStak() {
+		int[] newArray= new int[capacity*2];
+		capacity=capacity*2;
+		array=newArray;
+	}
+	public int peek() {
+		if (isEmpty()) {
+			System.out.println("Stack Empty");
+			return 0;
+		} else {
+			int  data= array[top];
+			System.out.println(data+" at the top of the stack");
+			return data;
+		}
+
+	}
+
+	public void deleteStack() {
+		top = -1;
+	}
+
+}

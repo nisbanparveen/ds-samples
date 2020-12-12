@@ -1,0 +1,45 @@
+
+public class SimpleArrayStack {
+
+	private int top;
+	private int capacity;
+	private int[] array;
+	public SimpleArrayStack() {
+		top=-1;
+		capacity=1;
+		array=new int[capacity];
+	}
+	
+	public boolean isEmpty() {
+		return (top==-1);
+	}
+	
+	public boolean isStackFull() {
+		return (top==capacity-1);
+	}
+	public void push(int data) {
+		if(isStackFull())
+			System.out.println("Stack Overflow");
+		else {
+			System.out.println();
+			array[++top]=data;
+		}
+	}
+	
+	public int pop() {
+		if(isEmpty())
+			System.out.println("Stack Empty");
+		return 0;
+		else 
+		{
+			System.out.println();
+			return array[top--];
+		}
+			
+	}
+	
+	public void deleteStack() {
+		top=-1;
+	}
+	
+}

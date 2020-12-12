@@ -1,0 +1,34 @@
+package LinkedList;
+
+import LinkedList.LinkedList.Node;
+
+public class LinkedListStack {
+
+	private LinkedList list;
+	Node headNode;
+
+	public LinkedListStack() {
+		this.list = new LinkedList();
+		headNode = list.head;
+	}
+
+	public void push(Object data) {
+		if (headNode == null) {
+			headNode = new Node(data);
+		} else {
+			Node newNode= new Node(data);
+			newNode.next=headNode;
+			headNode=newNode;
+			System.out.println(data+"pushed into stack");
+		}
+	}
+	
+	public Object top() {
+		if(headNode==null) return (Integer) null;
+		else {
+			System.out.println(headNode.data +(" is at the top of stack"));
+		return headNode.data;
+		}
+		
+	}
+}

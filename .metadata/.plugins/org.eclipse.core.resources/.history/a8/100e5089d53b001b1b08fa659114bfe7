@@ -1,0 +1,12 @@
+
+public class DynamicArrayStack extends SimpleArrayStack {
+
+	public void push(int data) {
+		if (isStackFull())
+			System.out.println("Stack Overflow");
+		else {
+			System.out.println(data+" pushed into to stack");
+			super().array[++top] = data;
+		}
+	}
+}

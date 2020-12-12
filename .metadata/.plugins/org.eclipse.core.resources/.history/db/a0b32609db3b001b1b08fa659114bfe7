@@ -1,0 +1,9 @@
+
+public class LinkedListStack {
+
+	private LinkedList list;
+	
+	public LinkedListStack() {
+		this.list= new LinkedList();
+	}
+}

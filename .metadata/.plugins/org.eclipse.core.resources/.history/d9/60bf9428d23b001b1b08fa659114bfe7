@@ -1,0 +1,14 @@
+
+public class SimpleArrayStack {
+
+	private int top;
+	private int capacity;
+	private int[] array;
+	public SimpleArrayStack() {
+		top=-1;
+		capacity=1;
+		array=new int[capacity];
+	}
+	
+	
+}

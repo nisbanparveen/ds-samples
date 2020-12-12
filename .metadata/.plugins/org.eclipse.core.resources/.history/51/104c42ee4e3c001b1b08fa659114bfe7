@@ -1,0 +1,63 @@
+package Implemenation;
+
+public class LinkedListStack {
+	Node head;
+
+	public static class Node {
+		Object data;
+		Node next;
+
+		public Node(Object data) {
+			this.data = data;
+			next = null;
+		}
+
+	}
+
+	Node headNode;
+
+	public LinkedListStack() {
+
+		headNode = new Node(null);
+	}
+
+	public void push(Object data) {
+		if (headNode == null) {
+			headNode = new Node(data);
+		} else {
+			Node newNode = new Node(data);
+			newNode.next = headNode;
+			headNode = newNode;
+			System.out.println(data + " pushed into stack");
+		}
+	}
+
+	public Object top() {
+		if (isEmpty())
+			return (Integer) null;
+		else {
+			System.out.println(headNode.data + (" is at the top of stack"));
+			return headNode.data;
+		}
+
+	}
+
+	public Object pop() {
+		if (isEmpty()) {
+			System.out.println("Stack is empty");
+			return null;
+		} else {
+			Object data = headNode.data;
+			headNode = headNode.next;
+			return data;
+
+		}
+	}
+
+	private boolean isEmpty() {
+		if (headNode == null)
+			return true;
+		else
+			return false;
+	}
+}

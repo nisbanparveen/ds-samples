@@ -1,0 +1,13 @@
+
+public class DynamicArrayStack extends SimpleArrayStack {
+
+	public void push(int data) {
+		if (isStackFull())
+			doubleStak();
+		super.array[++super.top] = data;
+	}
+
+	private void doubleStak() {
+		int newArray= new int[super.capacity*2]
+	}
+}

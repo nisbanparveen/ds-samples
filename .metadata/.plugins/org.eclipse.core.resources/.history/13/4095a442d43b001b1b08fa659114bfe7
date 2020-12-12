@@ -1,0 +1,11 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		SimpleArrayStack arrayStack = new SimpleArrayStack();
+		arrayStack.push(1);
+		System.out.println(arrayStack);
+
+	}
+
+}

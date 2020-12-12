@@ -1,0 +1,32 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		SimpleArrayStack arrayStack = new SimpleArrayStack();
+		//Push into the stack
+		arrayStack.push(1);
+		arrayStack.push(3);
+		arrayStack.push(5);
+		
+		//Pop from stack
+		arrayStack.pop();
+		
+		//Peek at the stack
+		arrayStack.peek();
+		
+		
+		System.out.println("DYNAMIC ARRAY IMPLEMENTATION");
+		DynamicArrayStack dyArrayStack = new DynamicArrayStack();
+		//Push into the stack
+		dyArrayStack.push(1);
+		dyArrayStack.push(3);
+		dyArrayStack.push(5);
+		
+		//Pop from stack
+		dyArrayStack.pop();
+		
+		//Peek at the stack
+		dyArrayStack.peek();
+	}
+
+}
